@@ -1,0 +1,50 @@
+body{
+    overflow: hidden;
+    background:radial-gradient( rgb(3, 6, 53), rgb(3, 6, 53));
+    animation: identifier2 infinite linear 5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+#sun{
+    border-radius: 50%;
+    background: rgba(255, 255, 0, 0);
+    box-shadow: 0 0 10vw 10vw yellow;
+    position: absolute;
+    width: 0vw;
+    height: 0vh;
+    left: 50vw;
+    top: 150vh;
+    transform: translate(-50%,-50%);
+    animation: identifier infinite linear 5s;
+}
+
+#ground{
+    min-width: 150vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background:radial-gradient( green, rgb(8, 71, 0));
+    margin: 0px;
+    bottom:-125vh;
+    left:50vw;
+    position: absolute;
+}
+
+@keyframes identifier{
+    0% {top:150vh}
+    20% {top:100vh}
+    40% {top:75vh}
+    60% {top:50vh}
+    80% {top:25vh}
+    100% {top:0vh}
+}
+
+@keyframes identifier2{
+     
+    0% {background:rgb(45, 6, 53);}
+    20% {background:rgb(3, 6, 53);}
+    40% {background:rgb(2, 19, 117);}
+    60% {background:rgb(21, 62, 145);}
+    80% {background:skyblue;}
+    100% {background:skyblue;}
+}
